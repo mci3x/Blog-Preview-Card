@@ -1,0 +1,165 @@
+/********************************/
+/* Custom properties */
+/********************************/
+
+:root {
+  --yello: hsl(47, 88%, 63%);
+  --gray-500: hsl(0, 0%, 42%);
+  --gray-950: hsl(0, 0%, 7%);
+  --spacing-sm: 0.75rem;
+  --spacing-bg: 1.5rem;
+}
+
+/********************************/
+/* General */
+/********************************/
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Figtree", sans-serif;
+  font-optical-sizing: auto;
+  background-color: var(--yello);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+/********************************/
+/* Elements */
+/********************************/
+
+.card {
+  border-radius: 20px;
+  background-color: white;
+  padding: var(--spacing-bg);
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-between;
+  box-shadow: inset 0 0 0 1px black, 8px 8px 0 0 black;
+  transition: all 450ms;
+}
+
+.card:hover,
+.card:focus,
+.card:active {
+  cursor: pointer;
+  .title {
+    color: var(--yello);
+  }
+}
+
+.image {
+  border-radius: 10px;
+  width: 100%;
+}
+
+.image,
+.description {
+  margin-bottom: var(--spacing-bg);
+}
+
+.tag {
+  display: inline-block;
+  background-color: var(--yello);
+  padding: 0.25rem 0.75rem;
+  border-radius: 4px;
+}
+
+.tag,
+.date,
+.title {
+  margin-bottom: var(--spacing-sm);
+}
+
+.author {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  font-style: normal;
+  gap: 0.75rem;
+}
+
+.avatar {
+  width: 32px;
+  height: 32px;
+}
+
+/********************************/
+/* Reusable components */
+/********************************/
+
+.text-preset--1 {
+  font-size: clamp(1.25rem, 3.5vw, 1.5rem);
+  font-weight: 800;
+  line-height: 1.5;
+  color: var(--gray-950);
+}
+
+.text-preset--2 {
+  font-size: clamp(0.875rem, 2.42vw, 1rem);
+  font-weight: 500;
+  line-height: 1.5;
+  color: var(--gray-500);
+}
+
+.text-preset--3 {
+  font-size: clamp(0.75rem, 2.1vw, 0.875rem);
+  font-weight: 500;
+  line-height: 1.5;
+  color: var(--gray-950);
+}
+
+.text-preset--3b {
+  font-size: 0.875rem;
+  font-weight: 800;
+  line-height: 1.5;
+  color: var(--gray-950);
+}
+
+/********************************/
+/* Media queries */
+/********************************/
+
+/* Above 320px */
+@media (min-width: 20rem) {
+  .card {
+    width: 20.438rem;
+    height: 31.313rem;
+  }
+}
+
+/* Above 704px */
+@media (min-width: 44rem) {
+  .card {
+    width: 24rem;
+    height: 32.625rem;
+  }
+}
+
+/********************************/
+/* Cheatsheet :D */
+/********************************/
+
+/*  4px = 0.25rem
+    12px = 0.75rem
+    14px = 0.875rem
+    16px = 1rem
+    20px = 1.25rem
+    24px = 1.5rem
+    32px = 2rem
+    327px = 20.438rem
+    384px = 24rem
+    501px = 31.313rem
+    522px = 32.625rem
+    704px = 44rem
+    1440px = 90rem
+    1920px = 120rem
+*/
