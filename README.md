@@ -36,8 +36,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Solution URL: [https://github.com/mci3x/Blog-Preview-Card](https://github.com/mci3x/Blog-Preview-Card)
+- Live Site URL: [https://mci3x.github.io/Blog-Preview-Card/](https://mci3x.github.io/Blog-Preview-Card/)
 
 ## My process
 
